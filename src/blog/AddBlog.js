@@ -82,9 +82,9 @@ const AddBlog = () => {
         timer: 2500,
       });
 
-      // setTimeout(() => {
-      //   navigate("/");
-      // }, 2000);
+      setTimeout(() => {
+        navigate("/");
+      }, 2500);
     } catch (error) {
       setAlertMessage("Failed to add blog. Please try again.");
       setAlertSeverity("error");
