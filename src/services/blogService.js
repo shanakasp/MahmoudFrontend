@@ -1,1 +1,1 @@
-export const BLOG_BASE_URL = "http://localhost:5000";
+export const BLOG_BASE_URL = "https://mahmoudbackend.onrender.com";

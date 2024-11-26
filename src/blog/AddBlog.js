@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import { BLOG_BASE_URL } from "../services/blogService";
 import "./BlogStyle.css";
 
 const AddBlog = () => {
@@ -62,7 +63,7 @@ const AddBlog = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/blogs/create",
+        `${BLOG_BASE_URL}/api/blogs/create`,
         data,
         {
           headers: {

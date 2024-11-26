@@ -2,7 +2,7 @@ import axios from "axios";
 import { format } from "date-fns";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { BLOG_BASE_URL } from "../services/blogService"; // Ensure this is correctly set
+import { BLOG_BASE_URL } from "../services/blogService";
 import Loading from "../utils/Loading";
 import "./BlogStyle.css";
 
@@ -117,6 +117,7 @@ const BlogList = () => {
                         src={blog.blogImage}
                         alt={blog.title || "blog post image"}
                         className="img-fluid bg-white img-thumbnail mb-1"
+                        style={{ width: "100%", height: "auto" }}
                       />
                     </Link>
                   </div>
