@@ -116,7 +116,7 @@ const BlogDetails = () => {
             <div className="col-md-12">
               {!imageError ? (
                 <img
-                  src={`http://localhost:5000/${blog.blogImage}`}
+                  src={blog.blogImage}
                   alt={blog.title || "Blog image"}
                   className="img-fluid blog-img"
                   onError={(e) => {

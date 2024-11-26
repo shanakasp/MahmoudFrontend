@@ -114,7 +114,7 @@ const BlogList = () => {
                       to={`/api/blogs/blog-details/${blog._id}/${blog.title}`}
                     >
                       <img
-                        src={`http://localhost:5000/${blog.blogImage}`}
+                        src={blog.blogImage}
                         alt={blog.title || "blog post image"}
                         className="img-fluid bg-white img-thumbnail mb-1"
                       />
