@@ -1,0 +1,31 @@
+.home {
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.home span.auto-type {
+  color: #f0826e;
+}
+.home h1 {
+  /* font-weight: bold; */
+  color: #72706f;
+  font-size: 24px;
+}
+.home h1.heading {
+  font-size: 36px;
+}
+
+@media only screen and (max-width: 600px) {
+  .home h1.heading {
+    font-size: 25px;
+    display: block;
+  }
+  .home-hero h1.heading-h1 {
+    font-size: 25px;
+  }
+}
+
+.home p {
+  color: #6b6969;
+}

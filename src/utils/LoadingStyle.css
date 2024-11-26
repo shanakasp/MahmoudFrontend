@@ -1,0 +1,89 @@
+.spinner-border {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  border-top: 2px solid #c7bcbc;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  -o-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* For extra small devices (phones, less than 576px) */
+.loading-spinner {
+  overflow: hidden;
+  height: 100px;
+}
+@media (max-width: 575.98px) {
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    height: 100px;
+  }
+}
+
+/* For small devices (tablets, 576px and up) */
+@media (min-width: 576px) {
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    height: 100px;
+  }
+}
+
+/* For medium devices (desktops, 768px and up) */
+@media (min-width: 768px) {
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    height: 100px;
+  }
+}
+
+/* For large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    height: 100px;
+  }
+}
+
+/* For extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    height: 100px;
+  }
+}
